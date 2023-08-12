@@ -23,9 +23,7 @@ const FormInput = ({ submitNewSheet }: FormInputProps) => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-    >
+    <form onSubmit={handleSubmit}>
       <Grid container spacing={2}>
         <Grid item xs={10}>
           <TextField
@@ -53,7 +51,7 @@ const FormInput = ({ submitNewSheet }: FormInputProps) => {
         </Grid>
       </Grid>
       <Typography variant="caption" gutterBottom>
-        Enter the name for your new sheet.
+        Enter the name for your new sheet. 123
       </Typography>
       <br />
       <Typography variant="caption" gutterBottom sx={{ fontStyle: 'italic' }}>
