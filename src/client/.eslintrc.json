@@ -27,7 +27,8 @@
     "prettier/prettier": "error",
     "react/prop-types": "warn",
     "camelcase": "warn",
-    "import/prefer-default-export": "warn",
+    "no-shadow": "off",
+    "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "warn",
     "prefer-object-spread": "warn",
     "import/extensions": [

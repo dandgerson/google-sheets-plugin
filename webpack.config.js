@@ -183,6 +183,30 @@ const DynamicCdnWebpackPluginConfig = {
     // "name" should match the package being imported
     // "var" is important to get right -- this should be the exposed global. Look up "webpack externals" for info.
     switch (packageName) {
+      case '@reduxjs/toolkit':
+        return {
+          name: packageName,
+          var: 'reduxjsToolkit',
+          version: packageVersion,
+          url: `https://www.unpkg.com/@reduxjs/toolkit@${packageVersion}/dist/redux-toolkit.umd.min.js`,
+          // url: `https://unpkg.com/styled-components@${packageVersion}/dist/styled-components${packageSuffix}`,
+        };
+      case 'react-redux':
+        return {
+          name: packageName,
+          var: 'reactRedux',
+          version: packageVersion,
+          url: `https://www.unpkg.com/react-redux@${packageVersion}/dist/react-redux.js`,
+          // url: `https://unpkg.com/styled-components@${packageVersion}/dist/styled-components${packageSuffix}`,
+        };
+      case 'styled-components':
+        return {
+          name: packageName,
+          var: 'styledComponents',
+          version: packageVersion,
+          url: `https://www.unpkg.com/styled-components@${packageVersion}/dist/styled-components.cjs.js`,
+          // url: `https://unpkg.com/styled-components@${packageVersion}/dist/styled-components${packageSuffix}`,
+        };
       case 'react-transition-group':
         return {
           name: packageName,

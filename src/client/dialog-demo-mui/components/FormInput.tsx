@@ -51,7 +51,7 @@ const FormInput = ({ submitNewSheet }: FormInputProps) => {
         </Grid>
       </Grid>
       <Typography variant="caption" gutterBottom>
-        Enter the name for your new sheet. 123
+        Enter the name for your new sheet.
       </Typography>
       <br />
       <Typography variant="caption" gutterBottom sx={{ fontStyle: 'italic' }}>
